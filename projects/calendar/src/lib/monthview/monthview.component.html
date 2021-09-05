@@ -1,0 +1,68 @@
+<div class="o_calendar_view">
+  <div class="o_calendar_widget fc mum-ltr mum-unthemed" style="">
+    <div class="mum-view-container">
+      <div class="mum-view mum-dayGridMonth-view mum-dayGrid-view" style="">
+        <table class="">
+          <thead class="mum-head">
+          <tr>
+            <td class="mum-head-container mum-widget-header">
+              <div class="mum-row mum-widget-header">
+                <table class="">
+                  <thead>
+                  <tr>
+                    <th *ngFor="let dayName of weekDaysList" class="mum-day-header mum-widget-header mum-mon">
+                      <span>{{dayName}}</span>
+                    </th>
+                  </tr>
+                  </thead>
+                </table>
+              </div>
+            </td>
+          </tr>
+          </thead>
+          <tbody class="mum-body">
+          <tr>
+            <td class="mum-widget-content">
+              <div class="mum-scroller mum-day-grid-container" style="overflow: hidden; height: 87vh;overflow-y: scroll">
+                <div class="mum-day-grid">
+                  <div *ngFor="let week of monthMatrix;let weekNumber = index" class="mum-row mum-week mum-widget-content"
+                       [style.min-height]="'14.5vh'">
+                    <div class="mum-bg">
+                      <table>
+                        <tbody>
+                        <tr>
+                          <td *ngFor="let dayName of weekDaysList" class="mum-day mum-widget-content mum-mon" [className]="dayName"></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="mum-content-skeleton">
+                      <table style="border-collapse: separate; border-spacing: revert">
+                        <thead>
+                        <tr>
+                          <td *ngFor="let day of week" [ngClass]="{'mum-other-month': day.otherMonth,
+                                  'mum-past': day.timeline < 0, 'mum-future': day.timeline > 0,
+                                   'mum-today': day.timeline === 0 && currentMonth.toString() === month.toString() && currentYear.toString() === year.toString()}"
+                              class="mum-day-top mum-mon">
+                            <span class="mum-day-number">{{day.day}}</span>
+                          </td>
+                        </tr>
+                        </thead>
+                        <tbody #tableEvent>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="o_calendar_buttons" role="toolbar" aria-label="Barre d'outil de calendrier"></div>
+
+</div>

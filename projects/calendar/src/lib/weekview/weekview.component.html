@@ -1,0 +1,353 @@
+<div class="o_calendar_view">
+  <div class="o_calendar_widget fc mum-ltr mum-unthemed" style="">
+    <div class="mum-view-container">
+      <div class="mum-view mum-timeGridWeek-view mum-timeGrid-view" style="">
+        <table class="">
+          <thead class="mum-head">
+          <tr>
+            <td class="mum-head-container mum-widget-header">
+              <div class="mum-row mum-widget-header" style="border-right-width: 1px; margin-right: 11px;">
+                <table class="">
+                  <thead>
+                  <tr>
+                    <th class="mum-axis mum-week-number mum-widget-header" style="width: 70.1833px;">
+                      <span></span>
+                    </th>
+                    <th *ngFor="let day of currentWeek;let w = index" class="mum-day-header mum-widget-header mum-mon mum-future">
+                      <span>{{weekDaysList[w]|substr}}. {{day.day}}</span>
+                    </th>
+                  </tr>
+                  </thead>
+                </table>
+              </div>
+            </td>
+          </tr>
+          </thead>
+          <tbody class="mum-body">
+          <tr>
+            <td class="mum-widget-content">
+              <div class="mum-scroller mum-time-grid-container" style="overflow: hidden scroll; height: 84vh;">
+                <div class="mum-time-grid">
+                  <div class="mum-bg">
+                    <table class="">
+                      <tbody>
+                      <tr>
+                        <td class="mum-axis mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-day mum-widget-content mum-mon mum-future" ></td>
+                        <td class="mum-day mum-widget-content mum-tue mum-future" ></td>
+                        <td class="mum-day mum-widget-content mum-wed mum-future" ></td>
+                        <td class="mum-day mum-widget-content mum-thu mum-future" ></td>
+                        <td class="mum-day mum-widget-content mum-fri mum-future" ></td>
+                        <td class="mum-day mum-widget-content mum-sat mum-future" ></td>
+                        <td class="mum-day mum-widget-content mum-sun mum-future" ></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="mum-slats">
+                    <table class="">
+                      <tbody>
+                      <tr data-time="00:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>00:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="00:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="01:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>01:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="01:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="02:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>02:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="02:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="03:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>03:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="03:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="04:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>04:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="04:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="05:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>05:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="05:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="06:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>06:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="06:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="07:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>07:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="07:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="08:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>08:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="08:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="09:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>09:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="09:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="10:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>10:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="10:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="11:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>11:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="11:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="12:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>12:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="12:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="13:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>13:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="13:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="14:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>14:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="14:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="15:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>15:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="15:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="16:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>16:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="16:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="17:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>17:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="17:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="18:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>18:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="18:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="19:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>19:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="19:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="20:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>20:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="20:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="21:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>21:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="21:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="22:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>22:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="22:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="23:00:00">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;">
+                          <span>23:00</span></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      <tr data-time="23:30:00" class="mum-minor">
+                        <td class="mum-axis mum-time mum-widget-content" style="width: 70.1833px;"></td>
+                        <td class="mum-widget-content"></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <hr class="mum-divider mum-widget-header" style="display:none">
+                  <div class="mum-content-skeleton">
+                    <table>
+                      <tbody>
+                      <tr>
+                        <td class="mum-axis" style="width: 70.1833px;"></td>
+                        <td>
+                          <div class="mum-content-col">
+                            <div class="mum-event-container mum-mirror-container"></div>
+                            <div class="mum-event-container"></div>
+                            <div class="mum-highlight-container"></div>
+                            <div class="mum-bgevent-container"></div>
+                            <div class="mum-business-container"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mum-content-col">
+                            <div class="mum-event-container mum-mirror-container"></div>
+                            <div class="mum-event-container"></div>
+                            <div class="mum-highlight-container"></div>
+                            <div class="mum-bgevent-container"></div>
+                            <div class="mum-business-container"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mum-content-col">
+                            <div class="mum-event-container mum-mirror-container"></div>
+                            <div class="mum-event-container"></div>
+                            <div class="mum-highlight-container"></div>
+                            <div class="mum-bgevent-container"></div>
+                            <div class="mum-business-container"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mum-content-col">
+                            <div class="mum-event-container mum-mirror-container"></div>
+                            <div class="mum-event-container"></div>
+                            <div class="mum-highlight-container"></div>
+                            <div class="mum-bgevent-container"></div>
+                            <div class="mum-business-container"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mum-content-col">
+                            <div class="mum-event-container mum-mirror-container"></div>
+                            <div class="mum-event-container"></div>
+                            <div class="mum-highlight-container"></div>
+                            <div class="mum-bgevent-container"></div>
+                            <div class="mum-business-container"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mum-content-col">
+                            <div class="mum-event-container mum-mirror-container"></div>
+                            <div class="mum-event-container"></div>
+                            <div class="mum-highlight-container"></div>
+                            <div class="mum-bgevent-container"></div>
+                            <div class="mum-business-container"></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mum-content-col">
+                            <div class="mum-event-container mum-mirror-container"></div>
+                            <div class="mum-event-container"></div>
+                            <div class="mum-highlight-container"></div>
+                            <div class="mum-bgevent-container"></div>
+                            <div class="mum-business-container"></div>
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="o_calendar_buttons" role="toolbar" aria-label="Barre d'outil de calendrier"></div>
+
+</div>

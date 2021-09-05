@@ -1,0 +1,11 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    {{title}}
+  <input class="search" type="text" (keyup)="search($event)">
+  </div>
+  <div class="panel-body">
+   <ng-content select="kb-event">
+
+   </ng-content>
+  </div>
+</div>

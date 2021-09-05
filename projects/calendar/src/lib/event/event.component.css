@@ -1,0 +1,172 @@
+.app-container {
+  position: relative;
+}
+.bk-calander {
+  border-collapse: collapse;
+  width: 70%;
+  left: 0%;
+  height: 100%;
+  margin-top: 12px;
+}
+.bk-day {
+  position: relative;
+  padding-bottom: 5em;
+  padding-right: 10em;
+  height: 55px;
+  margin: 0;
+  border-right: lightgray solid 1px;
+}
+.bk-day:hover .expand {
+  visibility: visible;
+}
+tr.bk-week td:last-child {
+  border-right: none;
+}
+.bk-day:hover {
+  background-color: azure;
+  cursor: pointer;
+}
+.bk-day-name-list, .bk-week {
+  border-bottom: solid 1px lightgray;
+}
+
+.bk-day-number {
+  color: black;
+}
+.today {
+  background-color: #E2EFFB;
+  border-top: 2px solid #0078D4;
+
+}
+
+.bk-day-name {
+  padding: 12px;
+  text-align: left;
+  color: #969696;
+}
+.bk-controle-panel {
+  color: white;
+  text-align: left;
+
+}
+.bk-controle-panel-item, #left>img, #right>img, #date {
+  padding: 2em;
+  height: 2em;
+}
+#date {
+  text-align: center;
+  vertical-align: center;
+
+}
+
+
+.date-picker-item {
+  text-align: center
+}
+.selected-date {
+  text-align: center;
+  top: 5%;
+  right: 0;
+
+}
+
+.btn-day {
+  color: gray;
+  padding: 12px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.bk-date-picker-col {
+  vertical-align: top;
+  text-align: center;
+  border-left: lightgray 2px solid;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.date-picker-item {
+  width: 15em;
+
+}
+
+#year > .year {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.bk-calander-application {
+  background-color: whitesmoke;
+}
+.prev, .next{
+  font-weight: bolder;
+  color: gray;
+  width: 15px;
+
+}
+
+.bk-calander-col {
+  width: 100%;
+
+}
+.bk-calander-header {
+  text-align: left;
+}
+.not-current-month {
+  color: gray;
+}
+.event {
+  top: 40px;
+  left: 0;
+  right: -145px;
+  background-color: #a5919c;
+}
+.panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+  margin-top: 5px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-heading {
+  color: #fff;
+  background-color: #5d6770;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-body {
+  padding: 15px;
+}
+
+.bk-picker-envent {
+  right: 2%;
+  width: 25%;
+  height: 100%;
+}
+.card {
+  padding: 1.25rem;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-top: 3px;
+  margin-top: 10px;
+  background-color: aliceblue;
+}
+.expand {
+  left: 90%;
+  bottom: 0;
+  cursor: pointer;
+  width: 7%;
+  rotate: -45deg;
+  visibility: visible;
+  z-index: 3;
+  visibility: hidden;
+}
+

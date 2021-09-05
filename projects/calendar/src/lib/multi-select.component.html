@@ -1,0 +1,34 @@
+<div class="o_DialogManager"></div>
+<div class="o_ChatWindowManager"></div>
+<div class="o_action_manager">
+  <div class="o_action o_view_controller">
+    <sc-navmanager (todayEmitter)="setToDay()" (changeView)="changeToWeek($event)">
+
+    </sc-navmanager>
+    <div class="o_content">
+      <div class="o_calendar_container">
+        <sc-monthview *ngIf="!isWeekView; else weekView"
+                      [weekDaysList]="weekDaysList"
+                      [year]="year"
+                      [events]="events"
+                      [currentMonth]="currentMonth"
+                      [currentYear]="currentYear"
+                      [monthMatrix]="monthMatrix"
+                      [month]="month">
+
+        </sc-monthview>
+        <ng-template #weekView>
+          <sc-weekview [currentWeek]="changeToWeek(true)"
+                       [weekDaysList]="weekDaysList">
+          </sc-weekview>
+        </ng-template>
+        <sc-date-picker (monthEmitter)="changeMonth($event)" (weekEmitter)="changeWeek($event)" (prevOrNext)="setMonthAndYear($event)"
+                        [monthMatrix]="weekArray(monthMatrix)" [month]="month" [year]="year"
+                        [currentMonth]="currentMonth" [currentYear]="currentMonth"
+                        [weekNumber]="weekNumber" [monthList]="monthList">
+        </sc-date-picker>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>

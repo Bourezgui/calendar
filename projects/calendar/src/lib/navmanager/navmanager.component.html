@@ -1,0 +1,28 @@
+<div class="o_control_panel">
+  <div class="o_cp_bottom">
+    <div class="o_cp_bottom_left">
+      <div role="toolbar" aria-label="Control panel buttons" class="o_cp_buttons">
+        <div class="o_calendar_buttons">
+          <button class="o_calendar_button_today btn btn-primary"
+                  (click)="today()"
+                  style="margin-right: 2em">Aujourd'hui</button>
+          <span class="o_calendar_scale_buttons">
+          <div class="btn-group">
+              <button type="button" class="o_calendar_button_week btn btn-secondary active"
+                      (click)="changeToWeek(true)">Semaine</button>
+              <button type="button" class="o_calendar_button_month btn btn-secondary"
+                      (click)="changeToWeek(false)">Mois</button>
+          </div>
+        </span>
+        </div>
+      </div>
+    </div>
+    <div class="o_cp_bottom_right">
+      <div class="space"></div>
+
+      <input type="text" autofocus="" accesskey="Q"
+                                                             placeholder="Recherche…" role="searchbox"
+                                                             class="o_searchview_input"></div>
+    </div>
+    </div>
+
